@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+Author  = Berkinhas
+Date    = 2023-04-24
+File    = index.html
+-->
+<html lang="en">
+  <head>
+    <title>DOM Manipulation</title>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8e310b09c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Inter:wght@100;500&family=Sora:wght@100;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <i class="fa-solid fa-calculator"></i>
+        <h1>IMC</h1>
+        <label for="peso">Digite seu peso:</label>
+        <input
+          id="peso"
+          type="number"
+          name="peso"
+          placeholder="ex: 75"
+        /><br /><br />
+        <label for="altura">Digite sua altura:</label>
+        <input
+          id="altura"
+          type="number"
+          name="altura"
+          placeholder="ex: 1.70"
+        /><br /><br />
+        <input
+          id="btn-calcular"
+          type="button"
+          name="calcular"
+          onclick="calculo()"
+          value="Calcular"
+        />
+        <br /><br />
+        <div class="result">
+          Seu IMC é:
+          <h2 id="imcResult"></h2>
+        </div>
+      </div>
+    </div>
+    <img src="img/3b576ede0701a977ee33c5477c278014.jpg" alt="" />
+  </body>
+</html>
